@@ -1,0 +1,114 @@
+/* Reset Css */
+* {
+    /* Viết theo kiểu Emmet để có thể viết nhanh hơn */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+#main {
+    background-color: #eeeeee42;
+    height: 10000px;
+}
+
+
+#header {
+    --header_height: 47px;
+    background-color: #000;
+    position: fixed;
+    height: var(--header_height);
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex; 
+    justify-content: space-between;
+}
+
+.header_navigaion {
+    display: flex;
+}
+
+
+.header_navigation-bar {
+    display: flex;
+}
+
+.navigation-bar-item {
+    list-style: none;
+    line-height: var(--header_height);   
+}
+
+.navigation-bar-item > a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    padding: 15px 24px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.navigation-bar-item > a:hover,
+.header_subnav-item:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.header_navigation-bar .header_subnav {
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    display: none;
+}
+
+.navigation-bar-item:hover > .header_subnav {
+    display: block;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 
+    0 4px 20px 0 rgba(0,0,0,0.19);
+}
+
+.header_subnav-item {
+    list-style: none;
+    line-height: 39px;
+    min-width: 160px;
+}
+
+.header_subnav-item > a {
+    padding: 11px 15px;
+}
+
+.header_subnav-item > a {
+    text-decoration: none;
+    color: #000;
+}
+
+.header_navigation-icon {
+    font-size: 16px;
+    padding-left: 4px;
+}
+
+.header_search {
+    line-height: var(--header_height);
+    color: #fff;
+    font-size: 16px;
+    padding: 0 24px;
+}
+
+.header_search:hover {
+    color: #fff;
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+
+/* Slider component */
+
+#slider {
+    min-height: 500px;
+    background-color: #333;
+}
