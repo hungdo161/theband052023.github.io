@@ -17,12 +17,16 @@ html {
     height: 10000px;
 }
 
+:root {
+    --header_height: 47px;
+}
+
 
 #header {
-    --header_height: 47px;
     background-color: #000;
     position: fixed;
     height: var(--header_height);
+    z-index: 100;
     top: 0;
     left: 0;
     right: 0;
@@ -109,6 +113,40 @@ html {
 /* Slider component */
 
 #slider {
+    margin-top: var(--header_height);
+    padding-top: 50%;
+    background-image: url(/assest/image/ny.jpg ) ;
+    background-repeat:no-repeat ;
+    background-size: contain;
+    background-position: top center;
+    position: relative;
+}
+
+.slider_content {
+    position: absolute;
+    color: #fff;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slider_content-heading,
+.slider_content-description {
+    text-align: center;
+}
+
+.slider_content-heading {
+    padding-bottom: 15px;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+
+.slider_content-description {
+    font-weight: 600;
+    font-size: 16px;
+}
+#content {
     min-height: 500px;
     background-color: #333;
 }
