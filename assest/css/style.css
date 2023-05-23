@@ -149,4 +149,5 @@ html {
 #content {
     min-height: 500px;
     background-color: #333;
+    font-size: 20px;
 }
