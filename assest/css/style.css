@@ -161,9 +161,11 @@ html {
     padding: 64px 16px;
 }
 
-.content_section-about {
+.content_section-about,
+.tour_section-about {
     max-width: 768px;
     margin: 0 auto;
+    padding: 64px 16px;
 }
 
 .content_container-description-title {
@@ -183,7 +185,6 @@ html {
 }
 
 .content_container-description-content {
-    text-align: justify;
     margin: 15px 0;
 }
 
@@ -193,10 +194,6 @@ html {
     margin: 32px 0;
 }
 
-.content_container-member-item {
-
-}
-
 .content_container-member-item-name {
     margin: 15px 0;
 }
@@ -204,4 +201,99 @@ html {
 .content_container-member-item-image {
     max-width: 154px;
     border-radius: 5px;
+}
+
+.content_section.tour_section {
+    background-color: #000;
+    color: #fff;
+}
+/* Tour dates section */
+
+.tourTicketStatus {
+    background-color: #fff;
+    list-style-type: none;
+    margin: 16px 0;
+}
+
+.ticketQuantity {
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    color: #757575;
+    line-height: 1.6;
+    padding: 8px 16px;
+}
+
+.ticketQuantity.ticketQuantity_soldOut > p {
+    margin: 0 16px;
+    padding: 0 8px;
+    background-color: #f44336;
+    color: #fff;
+    opacity: 1;
+}
+
+.ticketQuantity.ticketQuantity_remaining {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ticketQuantity.ticketQuantity_remaining > p {
+    margin-right: 16px;
+    padding: 0 8px;
+    border-radius: 50%;
+    background-color: #000;
+    color: #fff;
+}
+
+.tourPlace_about {
+    margin: 0 -16px;
+    padding: 0 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tourPlace {
+    width: 33.33%;
+    margin: 8px;
+    background-color: #fff;
+    color: #000;
+}
+
+.tourPlace_img {
+    width: 100%;
+    min-width: 175px;
+}
+
+.tourPlace_img:hover {
+    opacity: 0.8;
+}
+.tourPlace_content {
+    padding: 2px 16px;
+}
+
+.tourPlace_name {
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.tourPlace_date {
+    opacity: 0.6;
+    margin: 15px 0;
+}
+
+.tourPlace_desc {
+    margin: 15px 0;
+}
+
+.btn {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #000;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: #ddd;
+    color: #000;
+    cursor: pointer;
+    border: none;
 }
