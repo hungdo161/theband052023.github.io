@@ -14,7 +14,6 @@ html {
 
 #main {
     background-color: #eeeeee42;
-    height: 10000px;
 }
 
 :root {
@@ -158,11 +157,11 @@ html {
 
 .content_section {
     background-color:#fff;
-    padding: 64px 16px;
 }
 
 .content_section-about,
-.tour_section-about {
+.tour_section-about,
+.contact_section-about {
     max-width: 768px;
     margin: 0 auto;
     padding: 64px 16px;
@@ -296,4 +295,114 @@ html {
     color: #000;
     cursor: pointer;
     border: none;
+}
+
+/* Contact section */
+
+.contact_section-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0;
+}
+
+.contact_section-infomation {
+    width: 50%;
+    list-style-type: none;
+    margin-bottom: 16px;
+    font-size: 18px;
+}
+
+.contact_section-infomation-item > i {
+    width: 30px;
+}
+
+.contact_section-infomation-item {
+    line-height: 28px;
+}
+
+.contact_section-content-inputForm {
+    width: 50%;
+}
+
+.contact_section-content-input-row1 {
+    display: flex;
+    width: 100%;
+}
+.contact_section-content-input-name,
+.contact_section-content-input-email {
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+
+.contact_section-content-input-name {
+    margin-right: 8px;
+}
+
+.contact_section-content-input-email {
+    margin-left: 8px;
+}
+.contact_section-content-input-message {
+    padding: 8px;
+    width: 100%;
+}
+
+.sendButton {
+    margin: 16px 0;
+    
+}
+
+.btn-flex-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.content_section-mapImg {
+    background-image: url(/assest/image/map.jpg);
+    padding-top: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+/* Footer section*/
+
+#footer {
+    padding: 64px 16px;
+}
+
+.footer_listSocial {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+
+}
+
+.footer_listSocial-item i {
+    width: 30px;
+    font-size: 24px;
+    color: #000;
+    opacity: 0.7;
+}
+
+.footer_listSocial-item i:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.footer_listSocial-item > a {
+    text-decoration: none;
+}
+
+
+.footer-help {
+    text-align: center;
+    margin: 16px 0;
+    color: #757575;
+}
+
+.footer-help > a:hover {
+    cursor: pointer;
+    opacity: 0.8;
 }
