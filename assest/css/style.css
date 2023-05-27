@@ -25,7 +25,7 @@ html {
     background-color: #000;
     position: fixed;
     height: var(--header_height);
-    z-index: 100;
+    z-index: 10;
     top: 0;
     left: 0;
     right: 0;
@@ -185,6 +185,7 @@ html {
 
 .content_container-description-content {
     margin: 15px 0;
+    text-align: justify;
 }
 
 .content_container-member {
@@ -195,6 +196,7 @@ html {
 
 .content_container-member-item-name {
     margin: 15px 0;
+    text-align: center;
 }
 
 .content_container-member-item-image {
@@ -404,5 +406,110 @@ html {
 
 .footer-help > a:hover {
     cursor: pointer;
+    opacity: 0.8;
+}
+
+/* Modal Css */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 11;
+}
+
+.modal_buyTicketSection {
+    max-width: 900px;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.modal_titleWraper {
+    padding: 32px 16px;
+    background-color: #009688;
+    position: relative;
+}
+
+.modal_closedBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px 16px;
+    color: #fff;
+    font-size: 20px;
+}
+
+
+.modal_title {
+    font-size: 30px;
+    margin: 10px 0px;
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+
+.modal_buyTicket-content-container {
+    background-color: #fff;
+    padding: 1px 16px;
+}
+.modal_buyTicket-content {
+    margin: 15px 0;
+    font-size: 15px ;
+    color: #000;
+}
+
+.modal_buyTicket-subTitle {
+    margin-bottom: 15px;
+}
+
+.modal_buyTicket-input {
+    padding: 8px;
+    width: 100%;
+}
+
+.modal_payBtn {
+    width:100% ;
+    padding: 16px;
+    margin-bottom:16px ;
+    background-color: #009688;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    border: none;
+    font-size: 18px;
+}
+.modal_closedBtn:hover ,
+.modal_payBtn:hover,
+.modalFooter_closedBtn:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.modal_footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0;
+}
+
+.modalFooter_closedBtn {
+    background-color: #f44336;
+    color: #fff;
+    padding: 8px 16px;
+    font-weight: 500;
+    border: none;
+}
+
+.modal_help > a{
+    color: blue;
+}
+
+.modal_help > a:hover {
     opacity: 0.8;
 }
