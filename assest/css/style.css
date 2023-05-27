@@ -413,6 +413,8 @@ html {
 
 .modal {
     display: none;
+    align-items: center;
+    justify-content: center;
     position: fixed;
     top: 0;
     left: 0;
@@ -422,10 +424,16 @@ html {
     z-index: 11;
 }
 
+.modal.open {
+    display: flex !important;
+}
+
 .modal_buyTicketSection {
-    max-width: 900px;
+    width: 900px;
+    max-width: calc(100% - 32px); 
+    min-height: 250px;
     margin: auto;
-    padding-top: 100px;
+    animation: modalFaceIn ease 0.5s;
 }
 
 .modal_titleWraper {
@@ -512,4 +520,16 @@ html {
 
 .modal_help > a:hover {
     opacity: 0.8;
+}
+
+
+@keyframes modalFaceIn {
+    from {
+        transform: translateY(-150px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
