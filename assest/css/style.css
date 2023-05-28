@@ -124,7 +124,7 @@ html {
 .slider_content {
     position: absolute;
     color: #fff;
-    top: 80%;
+    top: 75%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -162,7 +162,8 @@ html {
 .content_section-about,
 .tour_section-about,
 .contact_section-about {
-    max-width: 768px;
+    width: 768px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 64px 16px;
 }
@@ -533,3 +534,4 @@ html {
         opacity: 1;
     }
 }
+

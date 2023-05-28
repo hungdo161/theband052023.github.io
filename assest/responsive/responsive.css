@@ -1,0 +1,22 @@
+
+/* for PC */
+
+@media (min-width: 1024px) {
+
+}
+
+/* for tablet */
+
+@media (min-width:741px) and (max-width: 1023px) {
+ .slider_content {
+    top: 70%;
+ }
+}
+
+
+/* for Mobile */
+@media (max-width: 740px) {
+    .header_navigation-bar {
+        display: block;
+    }
+}
