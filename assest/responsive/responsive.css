@@ -16,7 +16,50 @@
 
 /* for Mobile */
 @media (max-width: 740px) {
+    #header {
+        display: block;
+        overflow: hidden;
+    }
+
     .header_navigation-bar {
         display: block;
+    }
+
+    .navigation-bar-item {
+        background-color: #000;
+        color: #fff;
+    }
+
+    .navigation-bar-item:hover {
+        background-color: #ccc;
+    }
+
+    .navigation-bar-item > a > i {
+        display: none;
+    }
+    .header_search {
+        background-color: #000;
+        height: 47px;
+        color: #fff;
+        float: right;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .header_search > .header_search-PC {
+        display: none;
+    }
+
+    .header_search .header_search-mobile {
+        display: block;
+    }
+
+    .header_search:hover {
+        background-color: #ccc;
+        color: #000;
+    }
+    .navigation-bar-item:hover > .header_subnav{
+        display: none;
     }
 }

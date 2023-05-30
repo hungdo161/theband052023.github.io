@@ -1,14 +1,11 @@
 
 
 
-
-
-// 28/05/2023
+// 28/05/2023 buy tickkets modal
 
 const buyBtns = document.querySelectorAll(".js-tourPlace_buyBtn") ; 
 const getModal = document.querySelector(".js-modal") ;
 const getCloseBtns = document.querySelectorAll(".js-modal_closedBtn") ; 
-
 const getModalContainer = document.querySelector(".js-modal_buyTicketSection")
 
 
@@ -39,38 +36,18 @@ getModalContainer.addEventListener("click", function (event) {
 }
 );
 
+// 30/05/2023 mobile-menu bar open and close
 
+const header = document.querySelector('#header');
 
+const mobileMenuIcon =document.querySelector(".js-header_search");
 
+mobileMenuIcon.onclick = function () {
+    const isClosed = header.clientHeight === 47;
+    if (isClosed) {
+        header.style.height = 'auto';
+    } else {
+        header.style.height = '47px';
+    }
+}
 
-// 27/05/2023
-
-// const buyTecketBtns = document.querySelectorAll(".js-tourPlace_buyBtn")
-// const getModal = document.querySelector(".js-modal")
-// const modalBuyTicketSection = document.querySelector(".js-modal_buyTicketSection")
-// const closeModals = document.querySelectorAll(".js-modal_closedBtn")
-
-// function showModal() {
-//     getModal.classList.add("open")
-// };
-
-// function hideModal () {
-//     getModal.classList.remove("open")
-// }
-
-
-// for (const buyTecketBtn of buyTecketBtns) {
-//     buyTecketBtn.addEventListener('click', showModal)
-// };
-
-
-// for (const closeModal of closeModals) {
-//     closeModal.addEventListener('click', hideModal)
-// }
-
-// getModal.addEventListener('click', hideModal)
-
-// // ngăn chặn sử nổi bọt 
-// modalBuyTicketSection.addEventListener('click', function (event) {
-//     event.stopPropagation()
-// })
