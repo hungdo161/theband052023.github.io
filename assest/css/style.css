@@ -1,6 +1,7 @@
 /* Reset Css */
 * {
-    /* Viết theo kiểu Emmet để có thể viết nhanh hơn */
+    /* Viết t
+    eo kiểu Emmet để có thể viết nhanh hơn */
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -165,8 +166,8 @@ html {
 }
 
 .content_section-about,
-.tour_section-about,
-.contact_section-about {
+#tour_section-about,
+#contact_section-about {
     width: 768px;
     max-width: 100%;
     margin: 0 auto;

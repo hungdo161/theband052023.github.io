@@ -30,6 +30,18 @@
         color: #fff;
     }
 
+    .slider_content {
+        top: 50%;
+     }
+     .slider_content-heading {
+        font-size: 20px;
+        padding-bottom: 5px;
+     }
+     .slider_content-description {
+        font-size: 12px;
+        font-weight: 400;
+     }
+
     .navigation-bar-item:hover {
         background-color: #ccc;
     }
@@ -46,6 +58,12 @@
         top: 0;
         right: 0;
     }
+    .content_section-about,
+    #tour_section-about,
+    #contact_section-about {
+        padding: 32px 16px;
+    }
+
 
     .header_search > .header_search-PC {
         display: none;
@@ -61,5 +79,31 @@
     }
     .navigation-bar-item:hover > .header_subnav{
         display: none;
+    }
+
+    .navigation-bar-item > a {
+        display: block;
+        padding: 0 24px;
+    }
+    .tourPlace_about,
+    .content_container-member {
+        flex-direction: column;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .tourPlace {
+        width: 100%;
+    }
+
+    .tourPlace_about {
+        margin: 0;
+    }
+    .contact_section-content {
+        flex-direction: column;
+    }
+    .contact_section-infomation,
+    .contact_section-content-inputForm {
+        width: 100%;
     }
 }

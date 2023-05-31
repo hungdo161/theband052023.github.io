@@ -36,18 +36,31 @@ getModalContainer.addEventListener("click", function (event) {
 }
 );
 
+
+
 // 30/05/2023 mobile-menu bar open and close
 
 const header = document.querySelector('#header');
+const headerHeight = header.clientHeight ; 
 
 const mobileMenuIcon =document.querySelector(".js-header_search");
 
 mobileMenuIcon.onclick = function () {
-    const isClosed = header.clientHeight === 47;
+    const isClosed = header.clientHeight === headerHeight;
     if (isClosed) {
         header.style.height = 'auto';
     } else {
-        header.style.height = '47px';
+        header.style.height = null ;
+    }
+}
+
+// close menu mobile header khi click vào vào item 
+
+const menuItems = document.querySelectorAll('.header_navigation-bar > .navigation-bar-item');
+for (var i = 0; i <= menuItems.length ; i++ ) {
+    var menuItem = menuItems[i] ; 
+    menuItem.onclick = function () {
+        header.style.height = null ;
     }
 }
 
