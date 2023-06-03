@@ -7,15 +7,34 @@
 
 /* for tablet */
 
-@media (min-width:741px) and (max-width: 1023px) {
+@media (min-width:740px) and (max-width: 1023px) {
  .slider_content {
     top: 70%;
  }
 }
 
+/* For mobile and tablet */
+
+@media (max-width: 1024px) {
+    .btn {
+        padding: 12px 18px;
+    }
+    #footer {
+        font-size: 24px;
+    }
+    .footer_listSocial-item > a > i{
+        font-size: 32px;
+    }
+    .footer_listSocial-item {
+        padding: 6px 8px;
+    }
+
+}
+
+
 
 /* for Mobile */
-@media (max-width: 740px) {
+@media (max-width: 739px) {
     #header {
         display: block;
         overflow: hidden;
