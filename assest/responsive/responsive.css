@@ -42,13 +42,6 @@
         font-weight: 400;
      }
 
-    .navigation-bar-item:hover {
-        background-color: #ccc;
-    }
-
-    .navigation-bar-item > a > i {
-        display: none;
-    }
     .header_search {
         background-color: #000;
         height: 47px;
@@ -77,8 +70,23 @@
         background-color: #ccc;
         color: #000;
     }
+
+    #header .header_subnav {
+        background-color: #000;
+    }
+
+    #header .header_subnav .header_subnav-item a {
+        color: #fff;
+    }
+
+   #header .header_subnav {
+        position: initial;
+    }
     .navigation-bar-item:hover > .header_subnav{
-        display: none;
+        display: block;
+    }
+    #header .header_subnav .header_subnav-item {
+        padding: 5px 20px;
     }
 
     .navigation-bar-item > a {

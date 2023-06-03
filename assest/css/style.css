@@ -120,7 +120,7 @@ html {
 #slider {
     margin-top: var(--header_height);
     padding-top: 50%;
-    background-image: url(/assest/image/ny.jpg ) ;
+    background-image: url(../image/ny.jpg) ;
     background-repeat:no-repeat ;
     background-size: contain;
     background-position: top center;
@@ -368,7 +368,7 @@ html {
 }
 
 .content_section-mapImg {
-    background-image: url(/assest/image/map.jpg);
+    background-image: url(../image/map.jpg);
     padding-top: 50%;
     background-size: cover;
     background-repeat: no-repeat;
