@@ -199,6 +199,9 @@ html {
     display: flex;
     justify-content: space-around;
     margin: 32px 0;
+    align-items: center;
+    text-align: center;
+    
 }
 
 .content_container-member-item-name {
@@ -207,7 +210,8 @@ html {
 }
 
 .content_container-member-item-image {
-    max-width: 154px;
+    width: 60%;
+    max-width: 245px;
     border-radius: 5px;
 }
 
@@ -278,6 +282,8 @@ html {
     padding: 2px 16px;
 }
 
+
+
 .tourPlace_name {
     font-weight: 600;
     margin: 15px 0;
@@ -304,6 +310,10 @@ html {
     color: #000;
     cursor: pointer;
     border: none;
+}
+
+.tourPlace_about-buyBtn {
+    text-align: center;
 }
 
 /* Contact section */

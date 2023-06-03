@@ -114,4 +114,22 @@
     .contact_section-content-inputForm {
         width: 100%;
     }
+
+    .content_container-member-item-image {
+        width: 100%;
+    }
+
+    .tourPlace {
+        margin: 8px 0;
+    }
+
+
+
+    .tourPlace_about {
+        padding: 0;
+    }
+
+    .tourPlace_name {
+        font-size: 20px;
+    }
 }
